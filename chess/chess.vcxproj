@@ -18,10 +18,24 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="NullPiece.cpp" />
+    <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Queen.h" />
+    <ClInclude Include="Rook.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5a029d6c-f19a-4339-86f2-8574f736a636}</ProjectGuid>
+    <ProjectGuid>{7a96676b-99bf-4449-b070-d12b7d9e07c0}</ProjectGuid>
     <RootNamespace>chess</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -126,30 +140,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\test\Manager.cpp" />
-    <ClCompile Include="..\..\..\test\NullPiece.cpp" />
-    <ClCompile Include="..\..\..\test\Piece.cpp" />
-    <ClCompile Include="..\..\..\test\Player.cpp" />
-    <ClCompile Include="..\..\..\test\Source.cpp" />
-    <ClCompile Include="..\..\..\test\stdafx.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\test\Bishop.h" />
-    <ClInclude Include="..\..\..\test\Board.h" />
-    <ClInclude Include="..\..\..\test\King.h" />
-    <ClInclude Include="..\..\..\test\Knight.h" />
-    <ClInclude Include="..\..\..\test\Manager.h" />
-    <ClInclude Include="..\..\..\test\NullPiece.h" />
-    <ClInclude Include="..\..\..\test\Pawn.h" />
-    <ClInclude Include="..\..\..\test\Piece.h" />
-    <ClInclude Include="..\..\..\test\Pipe.h" />
-    <ClInclude Include="..\..\..\test\Player.h" />
-    <ClInclude Include="..\..\..\test\Queen.h" />
-    <ClInclude Include="..\..\..\test\Rook.h" />
-    <ClInclude Include="..\..\..\test\stdafx.h" />
-    <ClInclude Include="..\..\..\test\targetver.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
