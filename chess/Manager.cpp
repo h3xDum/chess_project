@@ -114,6 +114,7 @@ int Manager::playMove(string move)
 
 }
 
+
 void Manager::playGame()
 {
 	_currPlayer = _player2;
