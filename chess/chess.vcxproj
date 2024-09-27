@@ -19,27 +19,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="King.cpp" />
-    <ClCompile Include="Manager.cpp" />
-    <ClCompile Include="NullPiece.cpp" />
-    <ClCompile Include="Piece.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="stdafx.cpp" />
+    <ClInclude Include="include\Board.h" />
+    <ClInclude Include="include\King.h" />
+    <ClInclude Include="include\Manager.h" />
+    <ClInclude Include="include\NullPiece.h" />
+    <ClInclude Include="include\Piece.h" />
+    <ClInclude Include="include\Pipe.h" />
+    <ClInclude Include="include\Player.h" />
+    <ClInclude Include="include\Queen.h" />
+    <ClInclude Include="include\Rook.h" />
+    <ClInclude Include="include\stdafx.h" />
+    <ClInclude Include="include\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="King.h" />
-    <ClInclude Include="Manager.h" />
-    <ClInclude Include="NullPiece.h" />
-    <ClInclude Include="Piece.h" />
-    <ClInclude Include="Pipe.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Queen.h" />
-    <ClInclude Include="Rook.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
+    <ClCompile Include="src\Board.cpp" />
+    <ClCompile Include="src\King.cpp" />
+    <ClCompile Include="src\Manager.cpp" />
+    <ClCompile Include="src\NullPiece.cpp" />
+    <ClCompile Include="src\Piece.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Source.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
