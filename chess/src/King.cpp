@@ -1,4 +1,4 @@
-#include "King.h"
+#include "../include/King.h"
 
 King::King(Player* player, int row, int col, Board*){
 	

@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "../include/Player.h"
 
 
 Player::Player(bool isWhite) : Player(isWhite, isWhite ? false : true)
