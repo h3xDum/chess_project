@@ -44,10 +44,10 @@ void Manager::changeTurn()
 	_otherPlayer = temp;
 
 }
-int Manager::playMove(string move)
+int Manager::playMove(string move) // Ex: e2e4 -> move piece from e2 to e4 
 {
-	int srcRow = BOARD_SIZE - (move[1] - '0');
-	int srcCol = move[0] - 'a';
+	int srcRow = BOARD_SIZE - (move[1] - '0'); // converts int char val like '2' -> int 2  
+	int srcCol = move[0] - 'a'; // converts char like c -> to index ( index starting at 0 for a)
 	int dstRow = BOARD_SIZE - (move[3] - '0');
 	int dstCol = move[2] - 'a';
 
@@ -60,7 +60,7 @@ int Manager::playMove(string move)
 	{
 		return INVALID_OUT_OF_BOUNDS;
 	}
-
+	
 
 	if (!_brd->isPieceOfPlayer(srcRow, srcCol, _currPlayer))
 	{
@@ -132,7 +132,7 @@ void Manager::playGame()
 		_brd->print();
 
 		// get message from graphics
-		string msgFromGraphics = _pipe.getMessageFromGraphics();
+		string msgFromGraphics = _pipe.getMessageFromGraphics(); // the player move 
 
 		while (msgFromGraphics != "quit")
 		{
