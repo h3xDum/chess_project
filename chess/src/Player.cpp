@@ -1,15 +1,16 @@
 #include "../include/Player.h"
 
 
-Player::Player(bool isWhite) : Player(isWhite, isWhite ? false : true)
-{
+Player::Player(bool isWhite) : Player(isWhite, isWhite ? false : true) {
+	// white Player(true, false) 
+	// black Player(false, true)
 }
 
 Player::Player(bool isWhite, bool isUp)
 {
 	_isWhite = isWhite;
-	_myKing = NULL;
-	_isGoingUp = isUp;
+	_myKing = nullptr;
+	_isGoingUp = isUp; // board direction wise
 }
 Player::~Player()
 {

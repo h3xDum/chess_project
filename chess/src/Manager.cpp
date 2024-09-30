@@ -18,11 +18,11 @@ using namespace std;
 
 Manager::Manager(Pipe& graphicsPipe)
 {
-	_player1 = new Player(true);
-	_player2 = new Player(false);
+	_player1 = new Player(true);  // create white player
+	_player2 = new Player(false); // create black player 
 
-	_currPlayer = NULL;
-	_otherPlayer = NULL;
+	_currPlayer = nullptr;
+	_otherPlayer = nullptr;
 
 	_brd = new Board(_player1, _player2);
 	_pipe = graphicsPipe;
@@ -83,7 +83,7 @@ int Manager::playMove(string move) // Ex: e2e4 -> move piece from e2 to e4
 		return INVALID_ILLEGAL_MOVE;
 	}
 
-	// Make the move!
+	// Make the move
 	_brd->Move(srcRow, srcCol, dstRow, dstCol);
 
 	// check for chess
@@ -131,8 +131,8 @@ void Manager::playGame()
 
 		_brd->print();
 
-		// get message from graphics
-		string msgFromGraphics = _pipe.getMessageFromGraphics(); // the player move 
+		// Getting the Player move from the front end
+		string msgFromGraphics = _pipe.getMessageFromGraphics(); 
 
 		while (msgFromGraphics != "quit")
 		{

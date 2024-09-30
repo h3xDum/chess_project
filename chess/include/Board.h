@@ -14,7 +14,7 @@ class Piece;
 class Board
 {
 public:
-	Board(Player*, Player*);
+	Board(Player* firstPlayer, Player* secondPlayer);
 	~Board();
 	void print() const;
 	void getString(char res[]) const;
